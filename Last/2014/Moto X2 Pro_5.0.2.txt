@@ -1,0 +1,18 @@
+fastboot devices
+fastboot getvar max-sparse-size
+fastboot oem fb_mode_set
+fastboot flash partition gpt.bin
+fastboot flash bootloader bootloader.img
+fastboot flash radio radio.img
+fastboot flash logo logo.bin
+fastboot flash boot boot.img
+fastboot flash recovery recovery.img
+fastboot flash system system.img_sparsechunk.0
+fastboot flash system system.img_sparsechunk.1
+fastboot flash system system.img_sparsechunk.2
+fastboot flash system system.img_sparsechunk.3
+fastboot erase cache
+fastboot erase userdata
+fastboot erase clogo
+fastboot oem fb_mode_clear
+fastboot reboot

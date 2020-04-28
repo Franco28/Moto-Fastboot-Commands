@@ -1,0 +1,21 @@
+fastboot devices
+fastboot set_active a
+fastboot getvar max-sparse-size
+fastboot oem fb_mode_set
+fastboot flash boot_a boot.img
+fastboot flash boot_b boot.img
+fastboot flash system_a system.img_sparsechunk.0
+fastboot flash system_a system.img_sparsechunk.1
+fastboot flash system_a system.img_sparsechunk.2
+fastboot flash system_a system.img_sparsechunk.3
+fastboot flash system_a system.img_sparsechunk.4
+fastboot flash system_a system.img_sparsechunk.5
+fastboot flash system_a system.img_sparsechunk.6
+fastboot flash system_b system_other.img
+fastboot flash oem_a oem.img
+fastboot flash oem_b oem.img
+fastboot erase carrier
+fastboot erase userdata
+fastboot erase ddr
+fastboot oem fb_mode_clear
+fastboot reboot

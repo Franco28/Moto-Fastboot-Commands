@@ -4,8 +4,6 @@ fastboot getvar max-sparse-size
 fastboot oem fb_mode_set
 fastboot flash partition gpt.bin
 fastboot flash bootloader bootloader.img
-fastboot flash vbmeta_a vbmeta.img
-fastboot flash vbmeta_b vbmeta.img
 fastboot flash modem_a NON-HLOS.bin
 fastboot flash modem_b NON-HLOS.bin
 fastboot flash fsg_a fsg.mbn

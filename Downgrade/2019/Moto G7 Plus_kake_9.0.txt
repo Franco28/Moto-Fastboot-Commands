@@ -13,6 +13,8 @@ fastboot flash system_a system.img_sparsechunk.3
 fastboot flash system_a system.img_sparsechunk.4
 fastboot flash system_b system_b.img_sparsechunk.0
 fastboot flash system_b system_b.img_sparsechunk.1
+fastboot flash vendor_a vendor.img
+fastboot flash vendor_b vendor.img
 fastboot flash vendor_a vendor.img_sparsechunk.0
 fastboot flash vendor_a vendor.img_sparsechunk.1
 fastboot flash vendor_b vendor.img_sparsechunk.0
